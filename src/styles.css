@@ -1,8 +1,28 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap");
 
 @custom-variant dark (&:is(.dark *));
+
+/* Jack — 3D Creator portfolio: scoped dark theme + Kanit font */
+.jack-page,
+.jack-page * {
+  box-sizing: border-box;
+}
+.jack-page {
+  font-family: "Kanit", sans-serif;
+  background-color: #0C0C0C;
+  color: #D7E2EA;
+  overflow-x: clip;
+}
+.jack-page .hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 
 @font-face {
     font-family: "Helvetica Regular";
