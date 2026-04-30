@@ -1,10 +1,12 @@
 import { motion } from "motion/react";
+import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
 
-type NavItem = { label: string; hasDropdown?: boolean };
+type NavItem = { label: string; hasDropdown?: boolean; to?: string };
 
 const items: NavItem[] = [
   { label: "Ecosystem" },
+  { label: "Catalog", to: "/catalog" },
   { label: "Economics", hasDropdown: true },
   { label: "Developers" },
   { label: "Governance", hasDropdown: true },
@@ -27,7 +29,7 @@ export default function Navbar() {
             key={item.label}
             className="cursor-pointer hover:opacity-70 transition-opacity flex items-center gap-1 group"
           >
-            {item.label}
+            {item.to ? <Link to={item.to}>{item.label}</Link> : item.label}
             {item.hasDropdown && (
               <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             )}
