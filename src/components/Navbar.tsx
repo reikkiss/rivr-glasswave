@@ -5,7 +5,7 @@ import { ArrowUpRight, ChevronRight } from "lucide-react";
 type NavItem = { label: string; hasDropdown?: boolean; to?: string };
 
 const items: NavItem[] = [
-  { label: "Ecosystem" },
+  { label: "nlj" },
   { label: "Catalog", to: "/catalog" },
   { label: "Economics", hasDropdown: true },
   { label: "Developers" },
