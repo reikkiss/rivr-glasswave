@@ -21,7 +21,7 @@ export default function Navbar() {
       </div>
 
       {/* Center menu */}
-      <ul className="hidden md:flex items-center gap-8 bg-white/40 backdrop-blur-md border border-white/30 rounded-full px-6 py-2.5 text-[14px] font-normal text-[rgba(30,50,90,0.9)]">
+      <ul className="hidden md:flex items-center gap-8 bg-white/40 backdrop-blur-md border border-white/30 rounded-full px-6 py-2.5 text-[14px] font-normal text-[#fef0d5]">
         {items.map((item) => (
           <li
             key={item.label}
