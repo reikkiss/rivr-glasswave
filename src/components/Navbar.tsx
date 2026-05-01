@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
+import solmareLogo from "@/assets/solmare-logo.png";
 
 type NavItem = { label: string; hasDropdown?: boolean; to?: string };
 
@@ -17,9 +18,7 @@ export default function Navbar() {
     <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-4 md:px-8 lg:px-12 py-4 md:py-6">
       {/* Left spacer (desktop) */}
       <div className="hidden md:block flex-1">
-        <div className="text-[20px] font-normal text-[rgba(30,50,90,0.95)] tracking-tight">
-          RIVR
-        </div>
+        <img src={solmareLogo} alt="Solmare" className="h-8 w-auto object-contain" />
       </div>
 
       {/* Center menu */}
@@ -38,9 +37,7 @@ export default function Navbar() {
       </ul>
 
       {/* Mobile logo */}
-      <div className="md:hidden text-[20px] font-normal text-[rgba(30,50,90,0.95)] tracking-tight">
-        RIVR
-      </div>
+      <img src={solmareLogo} alt="Solmare" className="md:hidden h-7 w-auto object-contain" />
 
       {/* Right button */}
       <div className="flex-1 flex justify-end">
