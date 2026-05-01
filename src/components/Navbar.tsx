@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
-import solmareLogo from "@/assets/solmare-logo.png";
 
 type NavItem = { label: string; hasDropdown?: boolean; to?: string };
 
@@ -18,7 +17,7 @@ export default function Navbar() {
     <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-4 md:px-8 lg:px-12 py-4 md:py-6">
       {/* Left spacer (desktop) */}
       <div className="hidden md:block flex-1">
-        <img src={solmareLogo} alt="Solmare" className="h-8 w-auto object-contain" />
+        <img src="https://media.canva.com/v2/image-resize/format:PNG/height:121/quality:100/uri:ifs%3A%2F%2FM%2F757f22b8-9481-4e05-bd67-2aba949c534c/watermark:F/width:488?csig=AAAAAAAAAAAAAAAAAAAAABFrL4eJu00esIk3TtTN1msnFeRNOA5zZnUVaEgFJ1cO&exp=1777612026&osig=AAAAAAAAAAAAAAAAAAAAAOdXe-Xf3pKAulHL2yJnhAd0gMniZfr8DTfiap9x8nFN&signer=media-rpc&x-canva-quality=thumbnail_large" alt="Solmare" className="h-8 w-auto object-cover" />
       </div>
 
       {/* Center menu */}
@@ -37,7 +36,7 @@ export default function Navbar() {
       </ul>
 
       {/* Mobile logo */}
-      <img src={solmareLogo} alt="Solmare" className="md:hidden h-7 w-auto object-contain" />
+      <img src="https://media.canva.com/v2/image-resize/format:PNG/height:121/quality:100/uri:ifs%3A%2F%2FM%2F757f22b8-9481-4e05-bd67-2aba949c534c/watermark:F/width:488?csig=AAAAAAAAAAAAAAAAAAAAABFrL4eJu00esIk3TtTN1msnFeRNOA5zZnUVaEgFJ1cO&exp=1777612026&osig=AAAAAAAAAAAAAAAAAAAAAOdXe-Xf3pKAulHL2yJnhAd0gMniZfr8DTfiap9x8nFN&signer=media-rpc&x-canva-quality=thumbnail_large" alt="Solmare" className="md:hidden h-7 w-auto object-cover" />
 
       {/* Right button */}
       <div className="flex-1 flex justify-end">
