@@ -9,8 +9,8 @@ export default function HeroBadge() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-md border border-white/20 mx-auto mb-3 w-fit"
     >
-      <Zap className="w-3.5 h-3.5 text-[rgba(30,50,90,0.9)]" />
-      <span className="text-[12px] font-normal text-[rgba(30,50,90,0.9)] tracking-wide">
+      <Zap className="w-3.5 h-3.5 text-[#fef0d5]" />
+      <span className="text-[12px] font-normal text-[#fef0d5] tracking-wide">
         Fluid Staking
       </span>
     </motion.div>
